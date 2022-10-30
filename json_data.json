@@ -1,0 +1,65 @@
+[
+  {
+    "name": "01 check version software ",
+    "cmd": "show software-version",
+    "cmd_config": "show software-version",
+    "md5": [
+      { "80.15.30":"3496b9d9941ea07154548666ee6aeb"},
+      { "80.21.40":"3496b59d9941ea07154548666ecde6aeb"},
+      { "80.20.15":"c7e8661be51a6e52cff295439d20ff93"},
+      { "80.28.40":"c99c50c98be993df8807b4ba158506fb"},
+      { "80.28.40":"c99c50cddbe993df8807b4ba156506fb"},
+      { "80.30.10":"3496b9d9941ea07154548666ecde6aeb"}
+        ]
+  },
+  {
+    "name": "02 Check NTP",
+    "cmd": "show ntp servers",
+    "cmd_config": "set ntp local-time-zone TIMEZONE.EASTERN_TIME auto-adjust-daylight-saving on;set ntp interval 30;set ntp server primary 10.6.248.209;set ntp active on;set ntp server secondary 10.6.248.213",
+    "md5":  [
+      { "80.28.20":"3496b9d9941ea07154548666ecde6aeb"},
+      { "80.20.15":"4d475468ff2f4ef9e3ebb17de0ff0440"}
+        ]
+  },
+  {
+    "name": "03 check administrators",
+    "cmd": "show administrators",
+    "md5": [{"80.50.10":"802f4b7961842d679c12e05e4c701a0b"}]
+  },
+  {
+    "name": "03 check Syslog",
+    "cmd": "show syslog-server all",
+    "md5": [{"80.29.40":"81c3a5d6681c439c7d0775012067b600"}]
+  },
+  {
+    "name": "04 check SNMP HQ",
+    "cmd": "show snmp-general-all",
+    "md5": [{"80.00.40":"78eg4554g564g546g45gsdfgvfg"}]
+  },
+  {
+    "name": "05 check Proxy HQ",
+    "cmd": "show proxy",
+    "md5": [{"80.22.100":"86ff2f56d80ef2a80f73f4019971f713"},
+    {"80.30":"86ff2f56d80ef2a80f73f4019971f71sss"}]
+  },
+  {
+    "name": "06 check Radius SRV",
+    "cmd": "show radius-servers",
+    "md5": [{"80.20.50":"d4afdfea068001089131a905b05dc34e"}]
+  },
+  {
+    "name": "07 IP admin allowed",
+    "cmd": "show  admin-access-ipv4-addresses",
+    "md5": [{"80.20.50":"78eg4554g564g546g45gsdfgvfg"}]
+  },
+  {
+    "name": "08 Domaine name",
+    "cmd": "show domainname",
+    "md5": [{"80.20.55":"3eca7320178528690ce565d903eb26e6"}]
+  },
+  {
+    "name": "09 Time zone",
+    "cmd": "show timezone",
+    "md5": [{"80.20.60":"144330c6a01b3d9e3354679a8bec83b9"}]
+  }
+]
