@@ -1,7 +1,7 @@
 [
   {
     "name": "01 check version software ",
-    "cmd": "show software_version",
+    "cmd": "show software-version",
     "cmd_config": "show software-version",
     "md5": [
       { "80.15.30":"3496b9d9941ea07154548666ee6aeb"},
