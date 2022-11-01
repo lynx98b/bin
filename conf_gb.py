@@ -1,5 +1,5 @@
 # !/usr/bin/python3
-# 2022 08 27 | | Script help my Linux Jobs checkpoint 1.1.10
+# 2022 08 27 | | Script help my Linux Jobs checkpoint 1.2
 
 from colorama import init, Fore
 import pandas as pd
