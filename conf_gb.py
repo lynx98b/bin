@@ -10,14 +10,14 @@ import getpass
 import sys
 
 # ----------------- declaration variable ------------
-global Mon_fichier_JSON, GREEN, RESET, RED, YELL
+global Mon_fichier_JSON, GREEN, RESET, RED, BLUE
 connection_to_GB = False
 net_connect = 'no data'
 json_path = '/app/PCS/bin/'
 GREEN = Fore.GREEN  # code couleur
 RESET = Fore.RESET
 RED = Fore.LIGHTRED_EX
-YELL = Fore.LIGHTCYAN_EX
+BLUE = Fore.LIGHTCYAN_EX
 Mon_fichier_JSON = pd.read_json(json_path + 'json_data.json')
 
 
@@ -40,7 +40,8 @@ def validateur_format_IP(MYIP):
     global valideIP
     try:
         ipaddress.ip_address(MYIP)
-        print('IP format correct start connection\n')
+        print('start connection')
+        print('=================\n')
         valideIP = True
     except ValueError:
         print(F"IP address '{MYIP}' not valid please check IP format\n")
@@ -88,7 +89,8 @@ def connection_GB_HQ_fonc():
 #  DEBUT  --------------------------------------lire le fichier json et excuté les comande clish
 def lancement_cmd_checkpoint():
     if connection_to_GB == True:
-
+        list_rsulta_vert=[]
+        list_rsulta_rouge=[]
         nbr_true = 0
         nbr_false = 0
 
@@ -97,7 +99,7 @@ def lancement_cmd_checkpoint():
 
             checkpoint_cmd = (Mon_fichier_JSON['cmd'][numero_test_cmd])
             Titre_etapes_cmd = (Mon_fichier_JSON['name'][numero_test_cmd])
-            print(f"{GREEN}Debut Traitement :  {Titre_etapes_cmd} {RESET}")
+            print(f"{RESET}% Etapes:  {Titre_etapes_cmd} {RESET} %")
             output = net_connect.send_command(checkpoint_cmd)
             print(output)
             md5_vlue = hashlib.md5(output.encode()).hexdigest()
@@ -111,22 +113,37 @@ def lancement_cmd_checkpoint():
                         match = True
 
             if match == True:
-                print(f"{YELL}{md5_vlue} -----------> Match \U0001f600   {RESET}")
+                print(f"{GREEN}{md5_vlue} -----------> Match \U0001f600   {RESET}")
                 nbr_true += 1
+                list_rsulta_vert.append({Titre_etapes_cmd})
             else:
                 print(f"{RED}{md5_vlue} ---> No Match Value \U0001F620 !!! {RESET}")
                 nbr_false += 1
+                list_rsulta_rouge.append({Titre_etapes_cmd})
 
-            print(f"{GREEN}Fin Traitement : {Titre_etapes_cmd} {RESET}")
-            print(f"{GREEN}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n {RESET}")
+            print(f"{RESET}Fin Etapes : {Titre_etapes_cmd} {RESET}")
+            print(f"{BLUE}___________________________________________\n{RESET}")
 
         net_connect.disconnect()
-        print(' _________________')
-        print(f"| Total Réussi : {GREEN}{nbr_true}{RESET} |\n| Total Echec {RED} : {nbr_false}{RESET} |")
-        print(' -----------------\n\n')
+
+        #print(f"| Total Réussi : {GREEN}{nbr_true} : {list_rsulta_vert} {RESET} |\n| Total Echec {RED} : {nbr_false} : {list_rsulta_rouge}{RESET} |")
+        print(f"| Conforme HQ  : {GREEN}{nbr_true} ")
+        print(*list_rsulta_vert,sep="\n")
+        print(f"|{RESET} Non Conforme HQ : {RED} {nbr_false}")
+        print(*list_rsulta_rouge, sep="\n")
 
 
-#  FIN -------------------------------Lire le fichier json et excuté les comande clish-----------------------------
+
+    #  FIN -------------------------------Lire le fichier json et excuté les comande clish-----------------------------
+
+
+def backup():
+    print('please Wait')
+
+    print('2')
+    output = net_connect.send_command('show configuration')
+    print(output)
+    print('2')
 
 
 def start(A):
@@ -136,15 +153,23 @@ def start(A):
         sys.exit()
 
 
+    elif A == '-b':
+        try:
+            print('start Backup config GB \n ')
+            connection_GB_HQ_fonc()
+            backup()
+            net_connect.disconnect()
+        except:
+            sys.exit()
+
     elif A == '-v':
         try:
-            print('start validation config GB \n ')
+            print('start Backup config GB \n ')
             connection_GB_HQ_fonc()
             lancement_cmd_checkpoint()
             net_connect.disconnect()
         except:
             sys.exit()
-
 
     elif A == '-c':
         try:
@@ -155,9 +180,10 @@ def start(A):
         except:
             sys.exit()
     else:
-        print(' scriptname.py [-d]      -dispaly version of config ')
-        print('               [-v]      -lance les validation de config dans le GB  ')
-        print('               [-c]      -comence la configuration du GB  ')
+        print(' scriptname.py [-d]      -Dispaly version of config supported ')
+        print('               [-v]      -Run validation configuration FW  ')
+        print('               [-c]      -start la configuration du FW  ')
+        print('               [-b]      -Backup configuration du GB  ')
         sys.exit()
 
 

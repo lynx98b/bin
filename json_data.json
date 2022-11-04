@@ -27,38 +27,45 @@
     "md5": [{"80.50.10":"802f4b7961842d679c12e05e4c701a0b"}]
   },
   {
-    "name": "03 check Syslog",
+    "name": "04 check Syslog",
     "cmd": "show syslog-server all",
     "md5": [{"80.29.40":"81c3a5d6681c439c7d0775012067b600"}]
   },
   {
-    "name": "04 check SNMP HQ",
+    "name": "05 check SNMP HQ",
     "cmd": "show snmp-general-all",
-    "md5": [{"80.00.40":"78eg4554g564g546g45gsdfgvfg"}]
+    "md5":  [
+      { "80.28.20":"78eg4554g564g546g45gsdfgvfg"},
+      { "80.20.15":"d417f117e699b71d8976250374698347"}
+        ]
+
   },
   {
-    "name": "05 check Proxy HQ",
+    "name": "06 check Proxy HQ",
     "cmd": "show proxy",
     "md5": [{"80.22.100":"86ff2f56d80ef2a80f73f4019971f713"},
     {"80.30":"86ff2f56d80ef2a80f73f4019971f71sss"}]
   },
   {
-    "name": "06 check Radius SRV",
+    "name": "07 check Radius SRV",
     "cmd": "show radius-servers",
     "md5": [{"80.20.50":"d4afdfea068001089131a905b05dc34e"}]
   },
   {
-    "name": "07 IP admin allowed",
+    "name": "08 IP admin allowed",
     "cmd": "show  admin-access-ipv4-addresses",
     "md5": [{"80.20.50":"78eg4554g564g546g45gsdfgvfg"}]
   },
   {
-    "name": "08 Domaine name",
+    "name": "09 Domaine name",
     "cmd": "show domainname",
-    "md5": [{"80.20.55":"3eca7320178528690ce565d903eb26e6"}]
+    "md5":  [
+      { "80.28.20":"78eg4554g564g546g45gsdfgvfg"},
+      { "80.20.15":"3eca7320178528690ce565d903eb26e6"}
+        ]
   },
   {
-    "name": "09 Time zone",
+    "name": "10 Time zone",
     "cmd": "show timezone",
     "md5": [{"80.20.60":"144330c6a01b3d9e3354679a8bec83b9"}]
   }
