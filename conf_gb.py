@@ -1,4 +1,6 @@
 # !/usr/bin/python3
+#!/bin/bash
+source /etc/profile.d/CP.sh
 # 2022 08 27 | | Script help my Linux Jobs checkpoint 1.2
 
 from colorama import init, Fore
@@ -141,7 +143,7 @@ def backup():
     print('please Wait')
 
     print('2')
-    output = net_connect.send_command('show configuration')
+    output = net_connect.send_command('backup automatic-mode')
     print(output)
     print('2')
 
