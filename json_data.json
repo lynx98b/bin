@@ -1,4 +1,18 @@
 [
+
+  {
+    "name": "Prendre le Lock",
+    "cmd": "cprid_util -server 192.168.2.66 -verbose rexec -rcmd /bin/clish -c \"lock database override\" ",
+    "cmd_config": "show software-version",
+    "md5": [
+      { "80.15.30":"3496b9d9941ea07154548666ee6aeb"},
+      { "80.21.40":"3496b59d9941ea07154548666ecde6aeb"},
+      { "80.20.15":"c7e8661be51a6e52cff295439d20ff93"},
+      { "80.28.40":"c99c50c98be993df8807b4ba158506fb"},
+      { "80.28.40":"c99c50cddbe993df8807b4ba156506fb"},
+      { "80.30.10":"3496b9d9941ea07154548666ecde6aeb"}
+        ]
+  },
   {
     "name": "01 check version software ",
     "cmd": "show software-version",
@@ -14,26 +28,26 @@
   },
   {
     "name": "02 Check NTP",
-    "cmd": "show ntp servers",
+    "cmd": "clish -c 'show ntp servers'",
     "cmd_config": "set ntp local-time-zone TIMEZONE.EASTERN_TIME auto-adjust-daylight-saving on;set ntp interval 30;set ntp server primary 10.6.248.209;set ntp active on;set ntp server secondary 10.6.248.213",
     "md5":  [
       { "80.28.20":"3496b9d9941ea07154548666ecde6aeb"},
-      { "80.20.15":"4d475468ff2f4ef9e3ebb17de0ff0440"}
+      { "80.20.15":"9e56c737713478bf67195b85efef4253"}
         ]
   },
   {
     "name": "03 check administrators",
-    "cmd": "show administrators",
+    "cmd": "clish -c 'show administrators'",
     "md5": [{"80.50.10":"802f4b7961842d679c12e05e4c701a0b"}]
   },
   {
     "name": "04 check Syslog",
-    "cmd": "show syslog-server all",
+    "cmd": "clish -c 'show syslog-server all'",
     "md5": [{"80.29.40":"81c3a5d6681c439c7d0775012067b600"}]
   },
   {
     "name": "05 check SNMP HQ",
-    "cmd": "show snmp-general-all",
+    "cmd": "clish -c 'show snmp-general-all'",
     "md5":  [
       { "80.28.20":"78eg4554g564g546g45gsdfgvfg"},
       { "80.20.15":"d417f117e699b71d8976250374698347"}
@@ -42,23 +56,23 @@
   },
   {
     "name": "06 check Proxy HQ",
-    "cmd": "show proxy",
+    "cmd": "clish -c 'show proxy'",
     "md5": [{"80.22.100":"86ff2f56d80ef2a80f73f4019971f713"},
     {"80.30":"86ff2f56d80ef2a80f73f4019971f71sss"}]
   },
   {
     "name": "07 check Radius SRV",
-    "cmd": "show radius-servers",
+    "cmd": "clish -c 'show radius-servers'",
     "md5": [{"80.20.50":"d4afdfea068001089131a905b05dc34e"}]
   },
   {
     "name": "08 IP admin allowed",
-    "cmd": "show  admin-access-ipv4-addresses",
+    "cmd": "clish -c 'show  admin-access-ipv4-addresses'",
     "md5": [{"80.20.50":"78eg4554g564g546g45gsdfgvfg"}]
   },
   {
     "name": "09 Domaine name",
-    "cmd": "show domainname",
+    "cmd": "clish -c 'show domainname'",
     "md5":  [
       { "80.28.20":"78eg4554g564g546g45gsdfgvfg"},
       { "80.20.15":"3eca7320178528690ce565d903eb26e6"}
@@ -66,7 +80,7 @@
   },
   {
     "name": "10 Time zone",
-    "cmd": "show timezone",
+    "cmd": "clish -c 'show timezone'",
     "md5": [{"80.20.60":"144330c6a01b3d9e3354679a8bec83b9"}]
   }
 ]

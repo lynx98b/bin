@@ -1,6 +1,6 @@
 # !/usr/bin/python3
 #!/bin/bash
-source /etc/profile.d/CP.sh
+#source /etc/profile.d/CP.sh
 # 2022 08 27 | | Script help my Linux Jobs checkpoint 1.2
 
 from colorama import init, Fore
@@ -64,9 +64,9 @@ def connection_GB_HQ_fonc():
             username_GB = input("User: ")
             p = getpass.getpass()
             print('----------------------------------\n\n')
-            input_IP = "192.168.2.247"
+            input_IP = "192.168.2.66"
             username_GB = "admin"
-            password_GB = "admin"
+            password_GB = "1234Alger++"
 
             mycheckpoint = {
                 "device_type": "checkpoint_gaia",
