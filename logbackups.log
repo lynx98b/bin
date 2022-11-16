@@ -51,3 +51,20 @@
 11/13/2022 11:44:01 AM  INFO Started logs 
 11/13/2022 11:44:01 AM  INFO check job bkb --> 192.168.2.66 
 11/13/2022 11:44:01 AM  INFO Finished logs
+11/15/2022 06:56:26 PM  INFO Started logs 
+11/15/2022 06:56:26 PM  INFO Lecture IP GW de la liste --> 192.168.2.66 
+11/15/2022 06:56:26 PM  INFO Lecture IP GW de la liste --> 192.168.2.247 
+11/15/2022 06:56:26 PM  INFO check job bkb --> 192.168.2.66 
+11/15/2022 06:56:26 PM  INFO Finished logs
+11/15/2022 06:56:32 PM  INFO Started logs 
+11/15/2022 06:56:32 PM  INFO Lecture IP GW de la liste --> 192.168.2.66 
+11/15/2022 06:56:32 PM  INFO Lecture IP GW de la liste --> 192.168.2.247 
+11/15/2022 06:56:32 PM  INFO check job bkb --> 192.168.2.66 
+11/15/2022 06:56:32 PM  INFO Finished logs
+11/15/2022 07:02:34 PM  INFO Started logs 
+11/15/2022 07:02:34 PM  INFO Lecture IP GW de la liste --> 192.168.2.247
+11/15/2022 07:02:55 PM  INFO Started logs 
+11/15/2022 07:02:55 PM  INFO Lecture IP GW de la liste --> 192.168.2.247
+11/15/2022 07:03:34 PM  INFO Started logs 
+11/15/2022 07:03:34 PM  INFO Lecture IP GW de la liste --> 192.168.2.247
+11/15/2022 07:03:34 PM  INFO Finished logs
