@@ -17,12 +17,19 @@ cprid_util -server 1.1.1.1 -verbose rexec -rcmd /bin/clish -c "save config" """
 
 import logging
 import os
+import csv
+
+
+
+
 
 
 # path des fichiers------------------------
+data_devices = 'devices.csv'
 path_dst_backup_checkpoint='/otp/PCS/bin/'
 path_dst_backup_showConf='/otp/PCS/bin/'
 path_dst_Log='/otp/PCS/Log/'
+
 #------------------------------------------
 
 
@@ -37,65 +44,153 @@ list_exception_backup=['bpbqsg5520','bpyb800','bpyb100','bpyb200']
 list_backup_every_month=['bpbqsg20','bpyb200','bpyb400']
 #------------------------------------------
 
-global current_GW
-gbname='192.168.2.66'
+
+p=True
+#---------verbos print-----------
+def printv(vl_to_prt):
+ if p == True:
+  print(vl_to_prt)
+ else: 
+    print('mode silent')
+# --------------------------------
+
+
+
+
+
+def runMYcmd(cmd):
+
+    try:
+        printv(f'commande a lancer {cmd}')
+        f = os.popen(cmd)
+        printv(f'resulta {f.read()}')
+    except Exception as er:
+        printv(f'erreur  excution de la commade {er} ')
 
 def main():
-
-    print('Fonction main ')
-
-def getall_GW(GW):
-
-    list_GW_BKP=['192.168.2.55','10.15.22.30','192.168.2.247']
-    current_GW=list_GW_BKP[GW]
-    logging.info(f'Lecture IP GW de la liste --> {current_GW}')
-    print(f'Lire les GW IP {current_GW} ')
+ print('prog start')
 
 
-def check_job_bkb(current_GW):
-        logging.info(f'check job bkb --> {current_GW} ')
-        mycmand1=f'cprid_util - server {current_GW} -verbose rexec - rcmd / bin / clish - c "show interfaces " '
-        mycmand2 = f'cprid_util - server {current_GW} -verbose rexec - rcmd / bin / clish - c "mgmt login user admin password 1234Alger++ " '
 
-        print(mycmand1)
-        print(mycmand2)
-        cmd_check_bkp = 'crontab -l |grep  -i /backups'
+
+
+def GW_version():
+    global GAIA_embeded,Gaia,xxx
+    GAIA_embeded=Gaia=xxx=False
+    cmd_check_CP_version=f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/clish -c "lock database override"'
+    if cmd_check_CP_version=='GAIA_embeded':
+        printv(f'version {current_GW} is GAIA_embeeded')
+        logging.info(f'version {current_GW} is GAIA_embeded')
+        GAIA_embeded = True
+    elif cmd_check_CP_version=='GAIA':
+        printv (f'version {current_GW} is GAIA')
+        logging.info(f'version {current_GW} is GAIA')
+        Gaia=True
+    else :
+        printv(f'version {current_GW} is xxx')
+        logging.info(f'version {current_GW} is xxx')
+        xxx = True
+
+
+
+
+
 def add_job_bkb():
-    cmd_add_bkp =f'set backup - scheduled  name {gbname} of Schedule > recurrence'
+    logging.info(f'Add Cron job bkb GW --> {current_GW} ')
+    printv(f'Add Cron job bkb GW {current_GW} ')
+    cmd_add_bkp_CP =f'set backup - scheduled  name {current_GW} of Schedule > recurrence'
+    cmd_add_bkp_chow_conf='cat <(crontab -l) <(echo "1 2 3 4 5 scripty.sh") | crontab -'
+    cmd_clean_bkps = 'cat <(crontab -l) <(echo "1 2 3 4 5 clean.sh") | crontab -'
+    try :
+        runMYcmd(cmd_add_bkp_CP)
+        runMYcmd(cmd_add_bkp_chow_conf)
+        runMYcmd(cmd_clean_bkps)
+        logging.info(f'Add Cron job bkb GW chow_conf--> {current_GW} ')
+    except Exception as e:
+        logging.error(f'error cron tabs  {e} ')
+
+def check_job_bkb():
+        global Job_bkp_exist
+        Job_bkp_exist=False
+        logging.info(f'check job bkb GW --> {current_GW} ')
+        printv(f'check job bkb GW {current_GW} ')
+
+
+        cmd_check_bkp = 'crontab -l |grep  -i /backups'
+        resulta_cmd_check_bkp_CP='0 5 * * 1 tar -zcf /var/backups/home.tgz /home/'
+        resulta_cmd_check_bkp_show_conf = '0 5 * * 1 tar -zcf /var/backups_show_cnfig/home.tgz /home/'
+        if resulta_cmd_check_bkp_CP =='0 5 * * 1 tar -zcef /var/backups/home.tgz /home/' and resulta_cmd_check_bkp_show_conf =='0 5 * * 1 tar -zcf /var/backups_show_cnfig/home.tgz /home/':
+            Job_bkp_exist=True
+        else:
+             Job_bkp_exist=False
+             logging.warning(f'Job bkb GW not exist GW  --> {current_GW} ')
+             add_job_bkb()
+
+
 
 def remove_bkps():
-    print('remove')
-def backup_files():
-    backup_files_conf=''
-    backup_routing=''
-    backup_show_configuration=''
+    if Job_bkp_exist == True:
+      printv('remove old Backup ')
+      logging.info(f' remove old Backup GW  --> {current_GW} ')
+    else:
+      printv('remove old Backup ')
+      logging.warning(f' no Backup to remove GW --> {current_GW} ')
+
+
+
+
+#-------------------------------------------------------------------------------------------------
+def trasnfer_BKP_to_manage():
+    try:
+       cmd_transfer =' rsync - avu - -delete "/home/user/A" "/home/user/B"'
+       os.system('ls -l')
+       printv('trasnfer_BKP_to_manage ')
+       logging.info(f' trasnfer_BKP_to_manage from GW --> {current_GW} ')
+    except Exception as e :
+       logging.error(f'error trasnfer_BKP_to_manage  {e} ')
+
+
+
 
 def sync_folders():
     try:
        cmd_transfer =' rsync - avu - -delete "/home/user/A" "/home/user/B"'
 
-       os.system('ls -')
+       os.system('date')
+       printv('Sync_Folders to second server  ')
+       logging.info(f' Sync_Folders to second server')
     except Exception as e :
        logging.error(f'error sync {e} ')
-
-
-def logs():
-    logging.warning('is when this event was logged.')
-
-
+#------------------------------------------------------------------------------------------------
 def notifs(num):
     if num ==0 :
-        print('error 0 ')
+        printv('error 0 ')
     elif num == 1:
-        print('error 1')
+        printv('error 1')
     else:
-        print('error autre')
+        printv('error autre')
+
+
 
 if __name__ == '__main__':
-    main()
-    getall_GW(2)
+    global current_GW
+    try:
+        logging.info(f'try open file csv devices  ')
+        with open(data_devices) as csvfile:
+            csvReader = csv.reader(csvfile, delimiter=';')
+            for row in csvReader:
+                printv(row[0])
+                current_GW=(row[0])
 
+        printv('Fonction main ')
+    except Exception as er:
+        printv(f'erreur  excution de la fcontion main  {er} ')
+        logging.error(f'main : can not find file --> {er}')
 
+    check_job_bkb()
+    remove_bkps()
+    trasnfer_BKP_to_manage()
+    sync_folders()
     logging.info('Finished logs')
 
 
