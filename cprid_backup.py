@@ -47,7 +47,7 @@ def runMYcmd(cmd):
         printv(f'commande a lancer {cmd}')
         f = os.popen(cmd)
         f=f.read()
-        printv(f'resulta {f}')
+        printv(f'resulta cmd ------------------------ >  :  {f}')        
         return f
     except Exception as er:
         printv(f'erreur  excution de la commade {er} ')
@@ -62,9 +62,9 @@ def main():
 def GW_version():
     global GAIA_embeded,Gaia,xxx
     GAIA_embeded=Gaia=xxx=False
-    cmd_check_CP_version=f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/clish -c "show version-software"'
-    runMYcmd(cmd_check_CP_version)
-    if cmd_check_CP_version in 'GAIA_embeded':
+    cmd_check_CP_version=f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/clish -c "lock database override"'
+    cmd_check_CP_version=runMYcmd(cmd_check_CP_version)
+    if  'R80.30' in cmd_check_CP_version:
         printv(f'version {current_GW} is GAIA_embeeded')
         logging.info(f'version {current_GW} is GAIA_embeded')
         GAIA_embeded = True
@@ -81,42 +81,64 @@ def GW_version():
 
 
 
-def add_job_bkb():
-    logging.info(f'Add Cron job bkb GW --> {current_GW} ')
-    printv(f'Add Cron job bkb GW {current_GW} ')
-    cmd_add_bkp_CP =f'set backup - scheduled  name {current_GW} of Schedule > recurrence'
-    cmd_add_bkp_chow_conf='cat <(crontab -l) <(echo "1 2 3 4 5 scripty.sh") | crontab -'
-    cmd_clean_bkps = 'cat <(crontab -l) <(echo "1 2 3 4 5 clean.sh") | crontab -'
-    try :
-        runMYcmd(cmd_add_bkp_CP)
-        runMYcmd(cmd_add_bkp_chow_conf)
-        runMYcmd(cmd_clean_bkps)
-        logging.info(f'Add Cron job bkb GW chow_conf--> {current_GW} ')
-    except Exception as e:
-        logging.error(f'error cron tabs  {e} ')
+def add_job_bkb(type):
+    logging.info(f'Add Cron job bkb GW type {type}--> {current_GW} ')
+    printv(f'Add Cron job bkb GW type {type}-->  {current_GW} ')
+    if type=='CP':
+     cmd_add_bkp_CP =f'set backup - scheduled  name {current_GW} of Schedule > recurrence'
+     try:
+         runMYcmd(cmd_add_bkp_CP)
+     except Exception as e:
+         logging.error(f'error cron tabs CP  {e} ')
 
+    else:
+        cmd_add_bkp_chow_conf='cat <(crontab -l) <(echo "1 2 3 4 5 scripty.sh") | crontab -'
+        try:
+          runMYcmd(cmd_add_bkp_chow_conf)
+        except Exception as e:
+          logging.error(f'error cron tabs show conf {e} ')
+
+    cmd_clean_bkps = 'cat <(crontab -l) <(echo "1 2 3 4 5 clean.sh") | crontab -'
+
+
+    runMYcmd(cmd_clean_bkps)
+    logging.info(f'Add Cron job bkb GW chow_conf--> {current_GW} ')
+
+#///////////////////////////////////////////////////////////////////////////////////////////////////////////
 def check_job_bkb():
-        global Job_bkp_exist
-        Job_bkp_exist=False
+        global Job_bkp_CP_exist,Job_bkp_show_config_exist
+        Job_bkp_CP_exist=False
+        Job_bkp_show_config_exist=False
         logging.info(f'check job bkb GW --> {current_GW} ')
         printv(f'check job bkb GW {current_GW} ')
 
+        cmd_check_bkp_CP =f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/bash -c "crontab -l |grep  -i bkp_daily"'
+        cmd_check_bkp_chow_conf = 'crontab -l |grep  -i bkp_daily_show_conf'
+        resulta_cmd_check_bkp_CP=(runMYcmd(cmd_check_bkp_CP))
+        resulta_cmd_check_bkp_show_conf = (runMYcmd(cmd_check_bkp_chow_conf))
 
-        cmd_check_bkp = 'crontab -l |grep  -i backup'
-        runMYcmd(cmd_check_bkp)
-        resulta_cmd_check_bkp_CP='0 5 * * 1 tar -zcf /var/backups/home.tgz /home/'
-        resulta_cmd_check_bkp_show_conf = '0 5 * * 1 tar -zcf /var/backups_show_cnfig/home.tgz /home/'
-        if resulta_cmd_check_bkp_CP =='0 5 * * 1 tar -zcef /var/backups/home.tgz /home/' and resulta_cmd_check_bkp_show_conf =='0 5 * * 1 tar -zcf /var/backups_show_cnfig/home.tgz /home/':
-            Job_bkp_exist=True
+        if 'bkp_daily'  in resulta_cmd_check_bkp_CP:
+            Job_bkp_CP_exist=True
+            printv(f'bkb CP exist GW  --> {current_GW}  ')
+            logging.info(f'  bkb CP exist GW  --> {current_GW} ')
         else:
-             Job_bkp_exist=False
-             logging.warning(f'Job bkb GW not exist GW  --> {current_GW} ')
-             add_job_bkb()
+             logging.warning(f'  bkb CP not exist !!!!  GW  --> {current_GW} ')
+             add_job_bkb('CP')
+
+        if 'bkp_daily_show_conf' in resulta_cmd_check_bkp_show_conf:
+            Job_bkp_show_config_exist=True
+            printv(f'bkb show conf  exist GW  --> {current_GW}  ')
+            logging.info(f'  bkb show conf  exist GW  --> {current_GW} ')
+
+        else:
+            logging.warning(f'  bkb show conf not exist !!!!  GW  --> {current_GW} ')
+            add_job_bkb('show_conf')
 
 
+#|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 def remove_bkps():
-    if Job_bkp_exist == True:
+    if Job_bkp_CP_exist == True:
       printv('remove old Backup ')
       logging.info(f' remove old Backup GW  --> {current_GW} ')
     else:
