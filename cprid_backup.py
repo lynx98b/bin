@@ -1,13 +1,3 @@
-""" NOTES
-cprid_util -server 1.1.1.1 -verbose rexec -rcmd /bin/clish -c "lock database override"
-cprid_util -server 1.1.1.1 -verbose rexec -rcmd /bin/clish -c "add user dbarker uid 0 homedir /home/dbarker"
-cprid_util -server 1.1.1.1 -verbose rexec -rcmd /bin/clish -c "add rba user dbarker roles adminRole"
-cprid_util -server 1.1.1.1 -verbose rexec -rcmd /bin/clish -c "set user dbarker gid 100 shell /bin/bash"
-cprid_util -server 1.1.1.1 -verbose rexec -rcmd /bin/clish -c "set user dbarker password-hash \$1\$Q43O\/bAm\$761B7deKoXgloZdbcjDYq\/"
-cprid_util -server 1.1.1.1 -verbose rexec -rcmd /bin/clish -c "save config" """
-
-
-
 """  ##################################
      # Script Backup 2023  par DF5322 #
      # Domaine Corpo Hydro quebec     #    
@@ -18,16 +8,21 @@ cprid_util -server 1.1.1.1 -verbose rexec -rcmd /bin/clish -c "save config" """
 import logging
 import os
 import csv
+import hashlib
+from datetime import date
 
+# path des fichiers + format de date ------------------------
+today = date.today()
+day = today.strftime("%d_%m_%Y")
 
-# path des fichiers------------------------
-data_devices = 'devices.csv'
-path_dst_backup_checkpoint='/otp/PCS/bin/'
-path_dst_backup_showConf='/otp/PCS/bin/'
-path_dst_Log='/otp/PCS/Log/'
+format_data = "%d_%m_%y"
+data_devices = '/app/PCS/bin/devices.csv'
+path_dst_backup_checkpoint='/app/PCS/bin/backup_CP/'
+path_dst_backup_showConf='/app/PCS/bin/backup_show_conf/'
+path_dst_Log='/app/PCS/bin/logs/logbackups.log'
 #------------------------------------------
 #----------- LOG files parametres ---------
-logging.basicConfig(filename='logbackups.log', level=logging.DEBUG, format='%(asctime)s  %(levelname)s %(message)s',datefmt='%m/%d/%Y %I:%M:%S %p')
+logging.basicConfig(filename=path_dst_Log, level=logging.DEBUG, format='%(asctime)s  %(levelname)s %(message)s',datefmt='%m/%d/%Y %I:%M:%S %p')
 logging.info('Started logs ')
 #------------------------------------------
 #------- liste exception-------------------
@@ -42,7 +37,7 @@ def printv(vl_to_prt):
  else: 
     print('mode silent')
 # --------------------------------
-def runMYcmd(cmd):
+def runMYcmd(cmd):# Excut commands checkpoint
     try:
         printv(f'commande a lancer {cmd}')
         f = os.popen(cmd)
@@ -52,11 +47,8 @@ def runMYcmd(cmd):
     except Exception as er:
         printv(f'erreur  excution de la commade {er} ')
 
-def main():
+def main(): # pour test
  print('prog start')
-
-
-
 
 
 def GW_version():
@@ -110,7 +102,7 @@ def check_job_bkb():
         Job_bkp_CP_exist=False
         Job_bkp_show_config_exist=False
         logging.info(f'check job bkb GW --> {current_GW} ')
-        printv(f'check job bkb GW {current_GW} ')
+        printv(f'check job bkb GW {current_GW}')
 
         cmd_check_bkp_CP =f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/bash -c "crontab -l |grep  -i bkp_daily"'
         cmd_check_bkp_chow_conf = 'crontab -l |grep  -i bkp_daily_show_conf'
@@ -137,23 +129,22 @@ def check_job_bkb():
 
 #|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-def remove_bkps():
-    if Job_bkp_CP_exist == True:
-      printv('remove old Backup ')
-      logging.info(f' remove old Backup GW  --> {current_GW} ')
-    else:
-      printv('remove old Backup ')
-      logging.warning(f' no Backup to remove GW --> {current_GW} ')
-
 
 
 
 #-------------------------------------------------------------------------------------------------
 def trasnfer_BKP_to_manage():
     try:
-       cmd_transfer =' rsync - avu - -delete "/home/user/A" "/home/user/B"'
-       os.system('ls -l')
+
+       myfiles=os.system('ls -l |grep logs')
+       result = hashlib.md5(((str(myfiles)).encode()))
+       printv(result.hexdigest())
+
        printv('trasnfer_BKP_to_manage ')
+
+       cmd_copy_cp_bkp = f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/bash -c "cp bakup{day}.gz  {path_dst_backup_checkpoint}  "'
+       cmd_copy_cp_bkp = runMYcmd(cmd_copy_cp_bkp)
+
        logging.info(f' trasnfer_BKP_to_manage from GW --> {current_GW} ')
     except Exception as e :
        logging.error(f'error trasnfer_BKP_to_manage  {e} ')
@@ -199,7 +190,6 @@ if __name__ == '__main__':
         logging.error(f'main : can not find file --> {er}')
 
     check_job_bkb()
-    remove_bkps()
     trasnfer_BKP_to_manage()
 
     sync_folders()
