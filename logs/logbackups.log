@@ -1,0 +1,268 @@
+11/21/2022 05:23:14 PM  INFO Started logs 
+11/21/2022 05:23:14 PM  INFO try open file csv devices  
+11/21/2022 05:23:14 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:23:14 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:23:14 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:23:14 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:23:14 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:23:14 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:23:14 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:23:14 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:23:14 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:23:14 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:23:14 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:23:14 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:23:14 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 05:23:14 PM  INFO  Sync_Folders to second server
+11/21/2022 05:23:14 PM  INFO Finished logs
+11/21/2022 05:27:12 PM  INFO Started logs 
+11/21/2022 05:27:12 PM  INFO try open file csv devices  
+11/21/2022 05:27:12 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:27:12 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:27:12 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:27:12 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:27:12 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:27:12 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:27:12 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:27:12 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:27:12 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:27:12 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:27:12 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:27:12 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:27:12 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 05:27:12 PM  INFO  Sync_Folders to second server
+11/21/2022 05:27:12 PM  INFO Finished logs
+11/21/2022 05:27:58 PM  INFO Started logs 
+11/21/2022 05:27:58 PM  INFO try open file csv devices  
+11/21/2022 05:27:58 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:27:58 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:27:58 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:27:58 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:27:58 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:27:58 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:27:58 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:27:58 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:27:58 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:27:58 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:27:58 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:27:58 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:27:58 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 05:27:58 PM  INFO  Sync_Folders to second server
+11/21/2022 05:27:58 PM  INFO Finished logs
+11/21/2022 05:28:53 PM  INFO Started logs 
+11/21/2022 05:28:53 PM  INFO try open file csv devices  
+11/21/2022 05:28:53 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:28:53 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:28:53 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:28:53 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:28:53 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:28:53 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:28:53 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:28:53 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:28:53 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:28:53 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:28:53 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:28:53 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:28:53 PM  ERROR error trasnfer_BKP_to_manage  'int' object has no attribute 'encode' 
+11/21/2022 05:28:53 PM  INFO  Sync_Folders to second server
+11/21/2022 05:28:53 PM  INFO Finished logs
+11/21/2022 05:28:55 PM  INFO Started logs 
+11/21/2022 05:28:55 PM  INFO try open file csv devices  
+11/21/2022 05:28:55 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:28:55 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:28:55 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:28:55 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:28:55 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:28:55 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:28:55 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:28:55 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:28:55 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:28:55 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:28:55 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:28:55 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:28:55 PM  ERROR error trasnfer_BKP_to_manage  'int' object has no attribute 'encode' 
+11/21/2022 05:28:55 PM  INFO  Sync_Folders to second server
+11/21/2022 05:28:55 PM  INFO Finished logs
+11/21/2022 05:29:22 PM  INFO Started logs 
+11/21/2022 05:29:22 PM  INFO try open file csv devices  
+11/21/2022 05:29:22 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:29:22 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:29:22 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:29:22 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:29:22 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:29:22 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:29:22 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:29:22 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:29:22 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:29:22 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:29:22 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:29:22 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:29:22 PM  ERROR error trasnfer_BKP_to_manage  'int' object has no attribute 'encode' 
+11/21/2022 05:29:22 PM  INFO  Sync_Folders to second server
+11/21/2022 05:29:22 PM  INFO Finished logs
+11/21/2022 05:29:41 PM  INFO Started logs 
+11/21/2022 05:29:41 PM  INFO try open file csv devices  
+11/21/2022 05:29:41 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:29:41 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:29:41 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:29:41 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:29:41 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:29:41 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:29:41 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:29:41 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:29:41 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:29:41 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:29:41 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:29:41 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:29:41 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 05:29:41 PM  INFO  Sync_Folders to second server
+11/21/2022 05:29:41 PM  INFO Finished logs
+11/21/2022 05:29:49 PM  INFO Started logs 
+11/21/2022 05:29:49 PM  INFO try open file csv devices  
+11/21/2022 05:29:49 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:29:49 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:29:49 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:29:49 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:29:49 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:29:49 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:29:49 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:29:49 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:29:49 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:29:49 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:29:49 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:29:49 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:29:49 PM  ERROR error trasnfer_BKP_to_manage  'int' object has no attribute 'encode' 
+11/21/2022 05:29:49 PM  INFO  Sync_Folders to second server
+11/21/2022 05:29:49 PM  INFO Finished logs
+11/21/2022 05:30:30 PM  INFO Started logs 
+11/21/2022 05:30:30 PM  INFO try open file csv devices  
+11/21/2022 05:30:30 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:30:30 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:30:30 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:30:30 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:30:30 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:30:30 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:30:30 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:30:30 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:30:30 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:30:30 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:30:30 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:30:30 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:30:30 PM  ERROR error trasnfer_BKP_to_manage  'int' object has no attribute 'encode' 
+11/21/2022 05:30:30 PM  INFO  Sync_Folders to second server
+11/21/2022 05:30:30 PM  INFO Finished logs
+11/21/2022 05:30:34 PM  INFO Started logs 
+11/21/2022 05:30:34 PM  INFO try open file csv devices  
+11/21/2022 05:30:34 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:30:34 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:30:34 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:30:34 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:30:34 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:30:34 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:30:34 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:30:34 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:30:34 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:30:34 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:30:34 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:30:34 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:30:34 PM  ERROR error trasnfer_BKP_to_manage  'int' object has no attribute 'encode' 
+11/21/2022 05:30:34 PM  INFO  Sync_Folders to second server
+11/21/2022 05:30:34 PM  INFO Finished logs
+11/21/2022 05:31:21 PM  INFO Started logs 
+11/21/2022 05:31:21 PM  INFO try open file csv devices  
+11/21/2022 05:31:21 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:31:21 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:31:21 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:31:21 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:31:21 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:31:21 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:31:21 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:31:21 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:31:21 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:31:21 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:31:21 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:31:21 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:31:21 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 05:31:21 PM  INFO  Sync_Folders to second server
+11/21/2022 05:31:21 PM  INFO Finished logs
+11/21/2022 05:31:30 PM  INFO Started logs 
+11/21/2022 05:31:30 PM  INFO try open file csv devices  
+11/21/2022 05:31:30 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 05:31:30 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 05:31:30 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 05:31:30 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 05:31:30 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 05:31:30 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 05:31:30 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:31:30 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 05:31:30 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:31:30 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 05:31:30 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 05:31:30 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 05:31:30 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 05:31:30 PM  INFO  Sync_Folders to second server
+11/21/2022 05:31:30 PM  INFO Finished logs
+11/21/2022 06:03:02 PM  INFO Started logs 
+11/21/2022 06:03:02 PM  INFO try open file csv devices  
+11/21/2022 06:03:02 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 06:03:02 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 06:03:02 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 06:03:02 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 06:03:02 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 06:03:02 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 06:03:02 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 06:03:02 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 06:03:02 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 06:03:02 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 06:03:02 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 06:03:02 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 06:03:02 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 06:03:02 PM  INFO  Sync_Folders to second server
+11/21/2022 06:03:02 PM  INFO Finished logs
+11/21/2022 06:03:38 PM  INFO Started logs 
+11/21/2022 06:03:38 PM  INFO try open file csv devices  
+11/21/2022 06:03:38 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 06:03:38 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 06:03:38 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 06:03:38 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 06:03:38 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 06:03:38 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 06:03:38 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 06:03:38 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 06:03:38 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 06:03:38 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 06:03:38 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 06:03:38 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 06:03:38 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 06:03:38 PM  INFO  Sync_Folders to second server
+11/21/2022 06:03:38 PM  INFO Finished logs
+11/21/2022 06:03:50 PM  INFO Started logs 
+11/21/2022 06:03:50 PM  INFO try open file csv devices  
+11/21/2022 06:03:50 PM  INFO version 192.168.2.50 is xxx
+11/21/2022 06:03:50 PM  INFO version 192.168.2.247 is xxx
+11/21/2022 06:03:50 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 06:03:50 PM  INFO version 192.168.2.142 is xxx
+11/21/2022 06:03:50 PM  INFO version 192.168.2.143 is xxx
+11/21/2022 06:03:50 PM  INFO check job bkb GW --> 192.168.2.143 
+11/21/2022 06:03:50 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 06:03:50 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.143 
+11/21/2022 06:03:50 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 06:03:50 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.143 
+11/21/2022 06:03:50 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.143 
+11/21/2022 06:03:50 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/21/2022 06:03:50 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/21/2022 06:03:50 PM  INFO  Sync_Folders to second server
+11/21/2022 06:03:50 PM  INFO Finished logs
+11/21/2022 06:04:21 PM  INFO Started logs 
+11/21/2022 06:04:21 PM  INFO try open file csv devices  
+11/21/2022 06:04:21 PM  INFO version 192.168.2.66 is xxx
+11/21/2022 06:04:21 PM  INFO check job bkb GW --> 192.168.2.66 
+11/21/2022 06:04:21 PM  WARNING   bkb CP not exist !!!!  GW  --> 192.168.2.66 
+11/21/2022 06:04:21 PM  INFO Add Cron job bkb GW type CP--> 192.168.2.66 
+11/21/2022 06:04:21 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.66 
+11/21/2022 06:04:21 PM  WARNING   bkb show conf not exist !!!!  GW  --> 192.168.2.66 
+11/21/2022 06:04:21 PM  INFO Add Cron job bkb GW type show_conf--> 192.168.2.66 
+11/21/2022 06:04:21 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.66 
+11/21/2022 06:04:21 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.66 
+11/21/2022 06:04:21 PM  INFO  Sync_Folders to second server
+11/21/2022 06:04:21 PM  INFO Finished logs
