@@ -751,3 +751,230 @@
 11/19/2022 06:18:10 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
 11/19/2022 06:18:10 PM  INFO  Sync_Folders to second server
 11/19/2022 06:18:10 PM  INFO Finished logs
+11/19/2022 06:22:18 PM  INFO Started logs 
+11/19/2022 06:22:18 PM  INFO try open file csv devices  
+11/19/2022 06:22:18 PM  INFO check job bkb GW --> 192.168.2.50 
+11/19/2022 06:22:18 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.50 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW --> 192.168.2.50 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.50 
+11/19/2022 06:22:18 PM  INFO check job bkb GW --> 192.168.2.247 
+11/19/2022 06:22:18 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.247 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW --> 192.168.2.247 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.247 
+11/19/2022 06:22:18 PM  INFO check job bkb GW --> 192.168.2.66 
+11/19/2022 06:22:18 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.66 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW --> 192.168.2.66 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.66 
+11/19/2022 06:22:18 PM  INFO check job bkb GW --> 192.168.2.142 
+11/19/2022 06:22:18 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.142 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW --> 192.168.2.142 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.142 
+11/19/2022 06:22:18 PM  INFO check job bkb GW --> 192.168.2.143 
+11/19/2022 06:22:18 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/19/2022 06:22:18 PM  INFO check job bkb GW --> 192.168.2.143 
+11/19/2022 06:22:18 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/19/2022 06:22:18 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/19/2022 06:22:18 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/19/2022 06:22:18 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/19/2022 06:22:18 PM  INFO  Sync_Folders to second server
+11/19/2022 06:22:18 PM  INFO Finished logs
+11/19/2022 06:23:20 PM  INFO Started logs 
+11/19/2022 06:23:20 PM  INFO try open file csv devices  
+11/19/2022 06:23:20 PM  INFO check job bkb GW --> 192.168.2.50 
+11/19/2022 06:23:20 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.50 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW --> 192.168.2.50 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.50 
+11/19/2022 06:23:20 PM  WARNING  no Backup to remove GW --> 192.168.2.50 
+11/19/2022 06:23:20 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.50 
+11/19/2022 06:23:20 PM  INFO check job bkb GW --> 192.168.2.247 
+11/19/2022 06:23:20 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.247 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW --> 192.168.2.247 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.247 
+11/19/2022 06:23:20 PM  WARNING  no Backup to remove GW --> 192.168.2.247 
+11/19/2022 06:23:20 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.247 
+11/19/2022 06:23:20 PM  INFO check job bkb GW --> 192.168.2.66 
+11/19/2022 06:23:20 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.66 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW --> 192.168.2.66 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.66 
+11/19/2022 06:23:20 PM  WARNING  no Backup to remove GW --> 192.168.2.66 
+11/19/2022 06:23:20 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.66 
+11/19/2022 06:23:20 PM  INFO check job bkb GW --> 192.168.2.142 
+11/19/2022 06:23:20 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.142 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW --> 192.168.2.142 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.142 
+11/19/2022 06:23:20 PM  WARNING  no Backup to remove GW --> 192.168.2.142 
+11/19/2022 06:23:20 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.142 
+11/19/2022 06:23:20 PM  INFO check job bkb GW --> 192.168.2.143 
+11/19/2022 06:23:20 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/19/2022 06:23:20 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/19/2022 06:23:20 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/19/2022 06:23:20 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/19/2022 06:23:20 PM  INFO  Sync_Folders to second server
+11/19/2022 06:23:20 PM  INFO Finished logs
+11/19/2022 06:25:29 PM  INFO Started logs 
+11/19/2022 06:25:29 PM  INFO try open file csv devices  
+11/19/2022 06:25:29 PM  INFO check job bkb GW --> 192.168.2.50 
+11/19/2022 06:25:29 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.50 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW --> 192.168.2.50 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.50 
+11/19/2022 06:25:29 PM  WARNING  no Backup to remove GW --> 192.168.2.50 
+11/19/2022 06:25:29 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.50 
+11/19/2022 06:25:29 PM  INFO check job bkb GW --> 192.168.2.247 
+11/19/2022 06:25:29 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.247 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW --> 192.168.2.247 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.247 
+11/19/2022 06:25:29 PM  WARNING  no Backup to remove GW --> 192.168.2.247 
+11/19/2022 06:25:29 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.247 
+11/19/2022 06:25:29 PM  INFO check job bkb GW --> 192.168.2.66 
+11/19/2022 06:25:29 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.66 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW --> 192.168.2.66 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.66 
+11/19/2022 06:25:29 PM  WARNING  no Backup to remove GW --> 192.168.2.66 
+11/19/2022 06:25:29 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.66 
+11/19/2022 06:25:29 PM  INFO check job bkb GW --> 192.168.2.142 
+11/19/2022 06:25:29 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.142 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW --> 192.168.2.142 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.142 
+11/19/2022 06:25:29 PM  WARNING  no Backup to remove GW --> 192.168.2.142 
+11/19/2022 06:25:29 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.142 
+11/19/2022 06:25:29 PM  INFO check job bkb GW --> 192.168.2.143 
+11/19/2022 06:25:29 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/19/2022 06:25:29 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/19/2022 06:25:29 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/19/2022 06:25:29 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/19/2022 06:25:29 PM  INFO  Sync_Folders to second server
+11/19/2022 06:25:29 PM  INFO Finished logs
+11/20/2022 05:53:01 PM  INFO Started logs 
+11/20/2022 05:53:01 PM  INFO try open file csv devices  
+11/20/2022 05:53:01 PM  INFO check job bkb GW --> 192.168.2.50 
+11/20/2022 05:53:01 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.50 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW --> 192.168.2.50 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.50 
+11/20/2022 05:53:01 PM  WARNING  no Backup to remove GW --> 192.168.2.50 
+11/20/2022 05:53:01 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.50 
+11/20/2022 05:53:01 PM  INFO check job bkb GW --> 192.168.2.247 
+11/20/2022 05:53:01 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.247 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW --> 192.168.2.247 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.247 
+11/20/2022 05:53:01 PM  WARNING  no Backup to remove GW --> 192.168.2.247 
+11/20/2022 05:53:01 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.247 
+11/20/2022 05:53:01 PM  INFO check job bkb GW --> 192.168.2.66 
+11/20/2022 05:53:01 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.66 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW --> 192.168.2.66 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.66 
+11/20/2022 05:53:01 PM  WARNING  no Backup to remove GW --> 192.168.2.66 
+11/20/2022 05:53:01 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.66 
+11/20/2022 05:53:01 PM  INFO check job bkb GW --> 192.168.2.142 
+11/20/2022 05:53:01 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.142 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW --> 192.168.2.142 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.142 
+11/20/2022 05:53:01 PM  WARNING  no Backup to remove GW --> 192.168.2.142 
+11/20/2022 05:53:01 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.142 
+11/20/2022 05:53:01 PM  INFO check job bkb GW --> 192.168.2.143 
+11/20/2022 05:53:01 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/20/2022 05:53:01 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/20/2022 05:53:01 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/20/2022 05:53:01 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/20/2022 05:53:01 PM  INFO  Sync_Folders to second server
+11/20/2022 05:53:01 PM  INFO Finished logs
+11/20/2022 05:56:16 PM  INFO Started logs 
+11/20/2022 05:56:16 PM  INFO try open file csv devices  
+11/20/2022 05:56:16 PM  INFO check job bkb GW --> 192.168.2.50 
+11/20/2022 05:56:16 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.50 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW --> 192.168.2.50 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.50 
+11/20/2022 05:56:16 PM  WARNING  no Backup to remove GW --> 192.168.2.50 
+11/20/2022 05:56:16 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.50 
+11/20/2022 05:56:16 PM  INFO check job bkb GW --> 192.168.2.247 
+11/20/2022 05:56:16 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.247 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW --> 192.168.2.247 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.247 
+11/20/2022 05:56:16 PM  WARNING  no Backup to remove GW --> 192.168.2.247 
+11/20/2022 05:56:16 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.247 
+11/20/2022 05:56:16 PM  INFO check job bkb GW --> 192.168.2.66 
+11/20/2022 05:56:16 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.66 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW --> 192.168.2.66 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.66 
+11/20/2022 05:56:16 PM  WARNING  no Backup to remove GW --> 192.168.2.66 
+11/20/2022 05:56:16 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.66 
+11/20/2022 05:56:16 PM  INFO check job bkb GW --> 192.168.2.142 
+11/20/2022 05:56:16 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.142 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW --> 192.168.2.142 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.142 
+11/20/2022 05:56:16 PM  WARNING  no Backup to remove GW --> 192.168.2.142 
+11/20/2022 05:56:16 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.142 
+11/20/2022 05:56:16 PM  INFO check job bkb GW --> 192.168.2.143 
+11/20/2022 05:56:16 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/20/2022 05:56:16 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/20/2022 05:56:16 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/20/2022 05:56:16 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/20/2022 05:56:16 PM  INFO  Sync_Folders to second server
+11/20/2022 05:56:16 PM  INFO Finished logs
+11/20/2022 05:56:54 PM  INFO Started logs 
+11/20/2022 05:56:54 PM  INFO try open file csv devices  
+11/20/2022 05:56:54 PM  INFO check job bkb GW --> 192.168.2.143 
+11/20/2022 05:56:54 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/20/2022 05:56:54 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/20/2022 05:56:54 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/20/2022 05:56:54 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/20/2022 05:56:54 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/20/2022 05:56:54 PM  INFO  Sync_Folders to second server
+11/20/2022 05:56:54 PM  INFO Finished logs
+11/20/2022 05:57:50 PM  INFO Started logs 
+11/20/2022 05:57:50 PM  INFO try open file csv devices  
+11/20/2022 05:57:50 PM  INFO check job bkb GW --> 192.168.2.143 
+11/20/2022 05:57:50 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/20/2022 05:57:50 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/20/2022 05:57:50 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/20/2022 05:57:50 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/20/2022 05:57:50 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/20/2022 05:57:50 PM  INFO  Sync_Folders to second server
+11/20/2022 05:57:50 PM  INFO Finished logs
+11/20/2022 05:58:46 PM  INFO Started logs 
+11/20/2022 05:58:46 PM  INFO try open file csv devices  
+11/20/2022 05:58:46 PM  INFO version 192.168.2.50 is xxx
+11/20/2022 05:58:46 PM  INFO version 192.168.2.247 is xxx
+11/20/2022 05:58:46 PM  INFO version 192.168.2.66 is xxx
+11/20/2022 05:58:46 PM  INFO version 192.168.2.142 is xxx
+11/20/2022 05:58:46 PM  INFO version 192.168.2.143 is xxx
+11/20/2022 05:58:46 PM  INFO check job bkb GW --> 192.168.2.143 
+11/20/2022 05:58:46 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/20/2022 05:58:46 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/20/2022 05:58:46 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/20/2022 05:58:46 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/20/2022 05:58:46 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/20/2022 05:58:46 PM  INFO  Sync_Folders to second server
+11/20/2022 05:58:46 PM  INFO Finished logs
+11/20/2022 05:59:33 PM  INFO Started logs 
+11/20/2022 05:59:33 PM  INFO try open file csv devices  
+11/20/2022 05:59:33 PM  ERROR main : can not find file --> GW_version() takes 0 positional arguments but 1 was given
+11/20/2022 05:59:33 PM  INFO check job bkb GW --> 192.168.2.50 
+11/20/2022 05:59:33 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.50 
+11/20/2022 05:59:33 PM  INFO Add Cron job bkb GW --> 192.168.2.50 
+11/20/2022 05:59:33 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.50 
+11/20/2022 05:59:33 PM  WARNING  no Backup to remove GW --> 192.168.2.50 
+11/20/2022 05:59:33 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.50 
+11/20/2022 05:59:33 PM  INFO  Sync_Folders to second server
+11/20/2022 05:59:33 PM  INFO Finished logs
+11/20/2022 05:59:56 PM  INFO Started logs 
+11/20/2022 05:59:56 PM  INFO try open file csv devices  
+11/20/2022 05:59:56 PM  INFO version 192.168.2.50 is xxx
+11/20/2022 05:59:56 PM  INFO version 192.168.2.247 is xxx
+11/20/2022 05:59:56 PM  INFO version 192.168.2.66 is xxx
+11/20/2022 05:59:56 PM  INFO version 192.168.2.142 is xxx
+11/20/2022 05:59:56 PM  INFO version 192.168.2.143 is xxx
+11/20/2022 05:59:56 PM  INFO check job bkb GW --> 192.168.2.143 
+11/20/2022 05:59:56 PM  WARNING Job bkb GW not exist GW  --> 192.168.2.143 
+11/20/2022 05:59:56 PM  INFO Add Cron job bkb GW --> 192.168.2.143 
+11/20/2022 05:59:56 PM  INFO Add Cron job bkb GW chow_conf--> 192.168.2.143 
+11/20/2022 05:59:56 PM  WARNING  no Backup to remove GW --> 192.168.2.143 
+11/20/2022 05:59:56 PM  INFO  trasnfer_BKP_to_manage from GW --> 192.168.2.143 
+11/20/2022 05:59:56 PM  INFO  Sync_Folders to second server
+11/20/2022 05:59:56 PM  INFO Finished logs

@@ -20,31 +20,20 @@ import os
 import csv
 
 
-
-
-
-
 # path des fichiers------------------------
 data_devices = 'devices.csv'
 path_dst_backup_checkpoint='/otp/PCS/bin/'
 path_dst_backup_showConf='/otp/PCS/bin/'
 path_dst_Log='/otp/PCS/Log/'
-
 #------------------------------------------
-
-
 #----------- LOG files parametres ---------
 logging.basicConfig(filename='logbackups.log', level=logging.DEBUG, format='%(asctime)s  %(levelname)s %(message)s',datefmt='%m/%d/%Y %I:%M:%S %p')
 logging.info('Started logs ')
 #------------------------------------------
-
-
 #------- liste exception-------------------
 list_exception_backup=['bpbqsg5520','bpyb800','bpyb100','bpyb200']
 list_backup_every_month=['bpbqsg20','bpyb200','bpyb400']
 #------------------------------------------
-
-
 p=True
 #---------verbos print-----------
 def printv(vl_to_prt):
@@ -53,17 +42,12 @@ def printv(vl_to_prt):
  else: 
     print('mode silent')
 # --------------------------------
-
-
-
-
-
 def runMYcmd(cmd):
-
     try:
         printv(f'commande a lancer {cmd}')
         f = os.popen(cmd)
         printv(f'resulta {f.read()}')
+        return f.read()
     except Exception as er:
         printv(f'erreur  excution de la commade {er} ')
 
@@ -77,8 +61,9 @@ def main():
 def GW_version():
     global GAIA_embeded,Gaia,xxx
     GAIA_embeded=Gaia=xxx=False
-    cmd_check_CP_version=f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/clish -c "lock database override"'
-    if cmd_check_CP_version=='GAIA_embeded':
+    cmd_check_CP_version=f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/clish -c "show version-software"'
+    runMYcmd(cmd_check_CP_version)
+    if cmd_check_CP_version in 'GAIA_embeded':
         printv(f'version {current_GW} is GAIA_embeeded')
         logging.info(f'version {current_GW} is GAIA_embeded')
         GAIA_embeded = True
@@ -117,6 +102,7 @@ def check_job_bkb():
 
 
         cmd_check_bkp = 'crontab -l |grep  -i /backups'
+        runMYcmd(cmd_check_bkp)
         resulta_cmd_check_bkp_CP='0 5 * * 1 tar -zcf /var/backups/home.tgz /home/'
         resulta_cmd_check_bkp_show_conf = '0 5 * * 1 tar -zcf /var/backups_show_cnfig/home.tgz /home/'
         if resulta_cmd_check_bkp_CP =='0 5 * * 1 tar -zcef /var/backups/home.tgz /home/' and resulta_cmd_check_bkp_show_conf =='0 5 * * 1 tar -zcf /var/backups_show_cnfig/home.tgz /home/':
@@ -181,6 +167,8 @@ if __name__ == '__main__':
             for row in csvReader:
                 printv(row[0])
                 current_GW=(row[0])
+                GW_version()
+
 
         printv('Fonction main ')
     except Exception as er:
@@ -190,6 +178,7 @@ if __name__ == '__main__':
     check_job_bkb()
     remove_bkps()
     trasnfer_BKP_to_manage()
+
     sync_folders()
     logging.info('Finished logs')
 
