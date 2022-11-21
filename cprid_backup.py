@@ -46,8 +46,9 @@ def runMYcmd(cmd):
     try:
         printv(f'commande a lancer {cmd}')
         f = os.popen(cmd)
-        printv(f'resulta {f.read()}')
-        return f.read()
+        f=f.read()
+        printv(f'resulta {f}')
+        return f
     except Exception as er:
         printv(f'erreur  excution de la commade {er} ')
 
@@ -101,7 +102,7 @@ def check_job_bkb():
         printv(f'check job bkb GW {current_GW} ')
 
 
-        cmd_check_bkp = 'crontab -l |grep  -i /backups'
+        cmd_check_bkp = 'crontab -l |grep  -i backup'
         runMYcmd(cmd_check_bkp)
         resulta_cmd_check_bkp_CP='0 5 * * 1 tar -zcf /var/backups/home.tgz /home/'
         resulta_cmd_check_bkp_show_conf = '0 5 * * 1 tar -zcf /var/backups_show_cnfig/home.tgz /home/'
