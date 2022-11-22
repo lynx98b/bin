@@ -142,7 +142,7 @@ def trasnfer_BKP_to_manage():
 
        printv('trasnfer_BKP_to_manage ')
 
-       cmd_copy_cp_bkp = f'cprid_util -server {current_GW} -verbose rexec -rcmd /bin/bash -c "cp bakup{day}.gz  {path_dst_backup_checkpoint}  "'
+       cmd_copy_cp_bkp = f'cprid_util getfile -server {current_GW} -verbose -local_file "{path_dst_backup_checkpoint}{day}/{current_GW}_bakup{day}.gz" -remote_file "/home/admin/bakup{day}"'
        cmd_copy_cp_bkp = runMYcmd(cmd_copy_cp_bkp)
 
        logging.info(f' trasnfer_BKP_to_manage from GW --> {current_GW} ')
@@ -154,7 +154,7 @@ def trasnfer_BKP_to_manage():
 
 def sync_folders():
     try:
-       cmd_transfer =' rsync - avu - -delete "/home/user/A" "/home/user/B"'
+       cmd_transfer =' rsync - avu - -del ete "/home/user/A" "/home/user/B"'
 
        os.system('date')
        printv('Sync_Folders to second server  ')
@@ -194,6 +194,7 @@ if __name__ == '__main__':
 
     sync_folders()
     logging.info('Finished logs')
+    logging.info('______________________________________________________________')
 
 
 
